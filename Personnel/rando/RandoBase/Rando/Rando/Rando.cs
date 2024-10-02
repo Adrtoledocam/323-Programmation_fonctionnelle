@@ -165,7 +165,7 @@ namespace Rando
         private void MergeTracks(List<GpxTrackPoint> secondTrackPoints)
         {
             double distanceBetweenTracks = CalculateDistance(trackPoints.Last(), secondTrackPoints.First());
-            if (distanceBetweenTracks < 100) // Menos de 100 metros de separación
+            if (distanceBetweenTracks < 100) 
             {
                 trackPoints.AddRange(secondTrackPoints);
             }
